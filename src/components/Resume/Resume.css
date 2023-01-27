@@ -1,0 +1,136 @@
+.Resume{
+  background-color: rgb(222, 222, 222);
+}
+
+.Resume .heading h1 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+.Resume .resume-btn:hover{
+  color: #01fffb;
+  
+}
+.Resume .heading .my-resume {
+  padding-top: 4rem;
+  color: #000000;
+}
+.Resume .heading .year{
+  font-size: 2.7rem;
+  color: #131313;
+}
+/* ------------------------------my coding */
+.content-section{
+  display: flex;
+}
+/* ------------------------------my coding */
+.Resume .content {
+  max-width: 85%;
+  margin: auto;
+  /* border: 4px solid green; */
+
+}
+.Resume .info {
+  max-width: 87%;
+  margin: auto;
+  /* background-color: #00790e; */
+  /* border: 4px solid green; */
+
+}
+.Resume .box {
+  padding: 20px;
+}
+.Resume hr {
+  margin: 25px 0px 15px 0px;
+  border: 1px solid #0498fb;
+  background-color: #e3e9ed;
+}
+.Resume .rate .btn_shadow {
+  color: #00790e;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.Resume p {
+  font-size: 22px;
+  transition: 0.5s;
+  color: #000000;
+}
+.Resume .box {
+  margin-bottom: 0px;
+  padding-top: 30px;
+  position: relative;
+}
+.Resume .btn_shadow:hover {
+  transform: translate(0);
+}
+.Resume .box:hover .btn_shadow {
+  background: #ffffff;
+  box-shadow: none;
+  color: rgb(234, 12, 12);
+}
+.Resume .box:hover p{
+  color: rgb(4, 0, 255);
+}
+.Resume .content-section {
+  position: relative;
+}
+.Resume .left {
+  position: relative;
+}
+.Resume .left::after {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 0px;
+  height: 115vh;
+  width: 5px;
+  background: #0480e6;
+  z-index: 0;
+}
+.Resume .box::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: -7%;
+  height: 5px;
+  width: 50px;
+  background: #19ecff;
+}
+.Resume .box::before {
+  content: "";
+  position: absolute;
+  top: 11%;
+  left: -10%;
+  height: 13px;
+  width: 13px;
+  background: #fff;
+  border: 5px solid #d9e2dc;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.5s;
+}
+.Resume .box:hover.box:before {
+  background: #5d17ff;
+}
+@media (max-width: 768px) {
+  .Resume .d_flex {
+    flex-direction: column;
+  }
+  .Resume .left::after {
+    top: 14%;
+    height: 100vh;
+  }
+}
+@media (max-width: 998px) {
+  .Resume .d_flex {
+    flex-direction: column;
+  }
+
+  .Resume .left::after {
+    top: 14%;
+    height: 180vh;
+  }
+}
